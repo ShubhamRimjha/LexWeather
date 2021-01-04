@@ -1,0 +1,32 @@
+{
+  "resourceName": "lex8abc5b41",
+  "botName": "Wbot",
+  "intents": [
+    {
+      "lambda": {
+        "region": "ap-southeast-2",
+        "accountId": "885283880309",
+        "lambdaArn": "arn:aws:lambda:ap-southeast-2:885283880309:function:Funct2",
+        "lambdaName": "Funct2"
+      },
+      "slots": [
+        {
+          "name": "city",
+          "type": "Cities",
+          "prompt": "Which city?",
+          "required": true,
+          "customType": true
+        }
+      ],
+      "utterances": [
+        "What is the weather",
+        "How is the weather"
+      ],
+      "intentName": "FindWeather",
+      "newSlotTypes": []
+    }
+  ],
+  "outputVoice": "Matthew",
+  "sessionTimeout": "5",
+  "coppa": false
+}

@@ -1,0 +1,18 @@
+{
+  "identityPoolName": "lexsample_identitypool_18484fcf",
+  "allowUnauthenticatedIdentities": true,
+  "authSelections": "identityPoolOnly",
+  "resourceName": "cognitoabbfbf5b",
+  "authRoleArn": {
+    "Fn::GetAtt": [
+      "AuthRole",
+      "Arn"
+    ]
+  },
+  "unauthRoleArn": {
+    "Fn::GetAtt": [
+      "UnauthRole",
+      "Arn"
+    ]
+  }
+}

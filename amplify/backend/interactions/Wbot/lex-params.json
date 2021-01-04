@@ -1,0 +1,35 @@
+{
+  "resourceName": "Wbot",
+  "botName": "Wbot",
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "city",
+          "type": "Cities",
+          "prompt": "What city?",
+          "required": true,
+          "customType": true
+        }
+      ],
+      "utterances": [
+        "What is the weather like?",
+        "How is the weather in {city}?"
+      ],
+      "intentName": "FindWeather",
+      "newSlotTypes": [
+        {
+          "slotType": "Cities",
+          "slotTypeDescription": "Name of cities...",
+          "slotValues": [
+            "Delhi",
+            "Mumbai"
+          ]
+        }
+      ]
+    }
+  ],
+  "outputVoice": "Matthew",
+  "sessionTimeout": "5",
+  "coppa": false
+}
